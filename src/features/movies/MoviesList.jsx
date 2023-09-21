@@ -25,7 +25,7 @@ function MoviesList() {
         toast({
           title: "Failed to load movies",
           description:
-            "Please, refresh the pate and check your internet connection",
+            "Please, refresh the page and check your internet connection",
           status: "error",
           duration: 9000,
           isClosable: true,

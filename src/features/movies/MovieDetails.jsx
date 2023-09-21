@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Card,
   CardBody,
   CardFooter,
@@ -15,6 +14,7 @@ import { MOVIEDB_IMAGES_URL } from "src/common/constants";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import { useSelector } from "react-redux";
 import { selectMovieById } from "./moviesSlice";
+import JokesGenerator from "../ai-jokes/JokesGenerator";
 
 function MovieDetails() {
   const { movieId } = useParams();
@@ -52,9 +52,11 @@ function MovieDetails() {
           </CardBody>
 
           <CardFooter>
-            <Button bg="green.300" color="white">
-              Generate Joke
-            </Button>
+            <JokesGenerator
+              movieId={movieId}
+              movieTitle={movie.title}
+              movieDescription={movie.overview}
+            />
           </CardFooter>
         </Stack>
       </Card>
