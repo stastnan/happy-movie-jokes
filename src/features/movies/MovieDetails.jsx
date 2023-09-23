@@ -1,4 +1,5 @@
 import {
+  Badge,
   Box,
   Card,
   CardBody,
@@ -40,22 +41,24 @@ function MovieDetails() {
         <Image
           objectFit="cover"
           maxW={{ base: "100%", sm: "200px" }}
-          src={`${MOVIEDB_IMAGES_URL}/${movie.poster_path}`}
-          alt={`${movie.title}'s poster`}
+          src={`${MOVIEDB_IMAGES_URL}/${movie?.poster_path}`}
+          alt={`${movie?.title}'s poster`}
         />
 
         <Stack>
           <CardBody>
-            <Heading size="md">{movie.title}</Heading>
-
-            <Text py="2">{movie.overview}</Text>
+            <Heading size="md">{movie?.title}</Heading>
+            <Text py="2" color="gray.600">
+              Rating: <Badge colorScheme="yellow">{movie?.vote_average}</Badge>
+            </Text>
+            <Text py="2">{movie?.overview}</Text>
           </CardBody>
 
           <CardFooter>
             <JokesGenerator
               movieId={movieId}
-              movieTitle={movie.title}
-              movieDescription={movie.overview}
+              movieTitle={movie?.title}
+              movieDescription={movie?.overview}
             />
           </CardFooter>
         </Stack>
