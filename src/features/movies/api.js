@@ -12,4 +12,4 @@ axios.defaults.headers.common["Authorization"] = `Bearer ${
 axios.defaults.headers.common["accept"] = "application/json";
 
 export const fetchPopularMovies = async () =>
-  await axios.get("/movie/popular/");
+  await axios.get(`/movie/popular?rand${Date.now()}/`);
