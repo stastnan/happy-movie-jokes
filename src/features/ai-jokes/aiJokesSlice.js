@@ -25,14 +25,13 @@ export const fetchJoke = createAsyncThunk(
     const messages = [
       {
         role: "user",
-        content: `Movie Title: ${movieTitle}, Movie Description: ${movieDescription}, ${rulesParams}, Joke: `,
+        content: `Movie Title: ${movieTitle}, Movie Description: ${movieDescription}, ${rulesParams} Joke:`,
       },
     ];
-
     if (joke) {
       messages.unshift({
         role: "user",
-        content: `Don't use joke: ${joke.joke} `,
+        content: `Don't use the last joke: ${joke}`,
       });
     }
 

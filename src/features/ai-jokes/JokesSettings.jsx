@@ -80,7 +80,7 @@ function JokesSettings() {
           </PopoverBody>
           <PopoverFooter>
             <form onSubmit={handleAddRule}>
-              <FormControl>
+              <FormControl isRequired>
                 <InputGroup size="sm" mb={2}>
                   <InputLeftAddon>Name:</InputLeftAddon>
                   <Input
@@ -90,7 +90,7 @@ function JokesSettings() {
                   />
                 </InputGroup>
               </FormControl>
-              <FormControl>
+              <FormControl isRequired>
                 <InputGroup size="sm" mb={2}>
                   <InputLeftAddon>Description:</InputLeftAddon>
                   <Input
