@@ -12,7 +12,7 @@ Happy Movie Jokes is designed to provide users with a fun experience by allowing
 - **Custom Jokes**: Users can set custom rules for generating jokes (or use pre-defined rule), which ChatGPT 3.5 then uses to create humor based on the selected movie.
 - **Interactive UI**: Utilize Chakra UI components for a responsive and accessible design.
 - **[Visit Happy Movie Jokes](https://happy-movie-jokes.vercel.app/)**
-- **[Watch project's video presentation](https://www.loom.com/share/ecbaf4a464a34e4fae8d563ba2c688a1)**
+- **[Watch project's video presentation](https://www.loom.com/share/ecbaf4a464a34e4fae8d563ba2c688a1?sid=9f56c424-a8dd-43c5-bc1b-1f664bbcd941)**
 
 ## Repository Structure
 
